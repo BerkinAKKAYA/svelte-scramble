@@ -13,12 +13,12 @@ const options = {
 	output: {
 		format: 'es',
 		name: 'app',
-		dir: '.'
+		dir: './build'
 	},
 	plugins: [
 		svelte({
 			dev: false,
-			css: css => css.write('./bundle.css', false)
+			css: css => css.write('./build/bundle.css', false)
 		}),
 		resolve({
 			browser: true,
