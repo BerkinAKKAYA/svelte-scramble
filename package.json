@@ -1,38 +1,20 @@
 {
-	"name": "svelte-typewriter",
-	"description": "A simple and reusable typewriter effect for your Svelte applications",
+	"name": "svelte-scramble",
+	"description": "A simple and reusable scramble effect for your Svelte applications",
 	"keywords": [
 		"svelte",
-		"typewriter-effect"
+		"scramble-effect"
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/henriquehbr/svelte-typewriter"
+		"url": "https://github.com/berkinakkaya/svelte-scramble"
 	},
 	"version": "2.1.16",
-	"main": "Typewriter.svelte",
-	"author": "Henrique Borges <henriqueborgeshbr@gmail.com>",
+	"main": "scramble.svelte",
+	"author": "Berkin AKKAYA <berkinakkaya@hotmail.com>",
 	"license": "MIT",
 	"scripts": {
-		"changelog": "auto-changelog -l false -u --hide-credit && git add CHANGELOG.md",
-		"postchangelog": "cross-env HUSKY_SKIP_HOOKS=1 git commit --amend --no-edit --no-verify",
-		"start": "yarn --cwd example && yarn --cwd example run start",
-		"publish": "yarn changelog",
-		"prettier": "prettier --write \"./**/*.{svelte,js}\""
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "yarn prettier && git add .",
-			"post-commit": "yarn changelog",
-			"pre-push": "yarn prettier"
-		}
-	},
-	"devDependencies": {
-		"auto-changelog": "^2.2.0",
-		"cross-env": "^7.0.2",
-		"husky": "^4.2.5",
-		"prettier": "^2.1.1",
-		"prettier-plugin-svelte": "^1.2.1"
+		"start": "yarn --cwd example && yarn --cwd example run start"
 	},
 	"dependencies": {
 		"svelte": "^3.24.1"
