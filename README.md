@@ -1,8 +1,8 @@
 # svelte-typewriter
 
-> A simple and reusable typewriter effect for your Svelte applications
+> A simple and reusable scramble effect
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+[DEMO](https://berkinakkaya.github.io/svelte-scramble)
 
 ## Installation
 
