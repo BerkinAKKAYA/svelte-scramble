@@ -13,12 +13,12 @@ const options = {
 	output: {
 		format: 'es',
 		name: 'app',
-		dir: 'build'
+		dir: '.'
 	},
 	plugins: [
 		svelte({
 			dev: false,
-			css: css => css.write('build/bundle.css', false)
+			css: css => css.write('./bundle.css', false)
 		}),
 		resolve({
 			browser: true,
@@ -32,7 +32,7 @@ const options = {
 		!production &&
 			serve({
 				contentBase: './',
-				port: 8080
+				port: 5000
 			}),
 		!production && livereload('./'),
 		terser()
